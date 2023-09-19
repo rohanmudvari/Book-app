@@ -163,7 +163,8 @@ class HomePage extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(10),
                                   child: Image.network(
                                     book.imageUrl,
-                                    width: 110,
+                                    width: 110
+                                    ,
                                     height: 120,
                                     fit: BoxFit.cover,
                                   ),
