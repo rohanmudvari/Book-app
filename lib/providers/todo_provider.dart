@@ -22,6 +22,12 @@ class TodoProvider extends StateNotifier<List<Todo>>{
     state =[...state];
   }
 
+  void updateTodo  (Todo todo){
+    state = [
+      for(final to in state) to.created_at == todo.created_at ? todo: to
+    ];
+  }
+
 
 
 
