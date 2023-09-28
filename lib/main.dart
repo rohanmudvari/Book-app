@@ -57,15 +57,21 @@ class Home extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: GetMaterialApp(
-          debugShowCheckedModeBanner: false,
 
-          theme: ThemeData(
+          debugShowCheckedModeBanner: false,
+          darkTheme: ThemeData(
+
+          ),
+
+          theme: ThemeData.dark(
             useMaterial3: true,
-            fontFamily: 'Raleway',
-            colorSchemeSeed: Colors.brown,
+            // fontFamily: 'Raleway',
+            // colorSchemeSeed: Colors.brown,
             // appBarTheme: AppBarTheme(
             //   color: Colors.amber
             // )
+          ).copyWith(
+
           ),
 home:HomePage(),
       ),
