@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:riverpods/view/widget/tab_bar_widgets.dart';
+
 
 
 
@@ -41,7 +43,7 @@ class HomePage extends StatelessWidget {
           body: TabBarView(
               physics: NeverScrollableScrollPhysics(),
               children: [
-                Text('hello world1'),
+                TabBarWidgets(),
                 Text('hello world2'),
                 Text('hello world3'),
               ]
